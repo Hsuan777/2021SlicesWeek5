@@ -1,0 +1,29 @@
+@each $name, $value in $d {
+  .d-#{$name} {
+    display: $value;
+  }
+}
+
+@each $name, $value in $justify-content {
+  .justify-content-#{$name} {
+    justify-content: $value;
+  }
+}
+
+@each $name, $value in $align-items {
+  .align-items-#{$name} {
+    align-items: $value;
+  }
+}
+
+@each $name, $value in $flex-direction {
+  .flex-#{$name} {
+    flex-direction: $value;
+  }
+}
+
+@each $name, $value in $flex-wrap {
+  .flex-#{$name} {
+    flex-wrap: $value;
+  }
+}

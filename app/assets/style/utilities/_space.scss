@@ -1,0 +1,54 @@
+.mx-auto {
+  margin: 0 auto;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+@each $name, $number in $space {
+  .ms-#{$name} {
+    margin-left: $number;
+  }
+  .me-#{$name} {
+    margin-right: $number;
+  }
+  .mt-#{$name} {
+    margin-top: $number;
+  }
+  .mb-#{$name} {
+    margin-bottom: $number;
+  }
+  .mx-#{$name} {
+    margin-left: $number;
+    margin-right: $number;
+  }
+  .my-#{$name} {
+    margin-top: $number;
+    margin-bottom: $number;
+  }
+  .ps-#{$name} {
+    padding-left: $number;
+  }
+  .pe-#{$name} {
+    padding-right: $number;
+  }
+  .pt-#{$name} {
+    padding-top: $number;
+  }
+  .pb-#{$name} {
+    padding-bottom: $number;
+  }
+  .px-#{$name} {
+    padding-left: $number;
+    padding-right: $number;
+  }
+  .py-#{$name} {
+    padding-top: $number;
+    padding-bottom: $number;
+  }
+}

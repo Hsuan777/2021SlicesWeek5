@@ -1,0 +1,5 @@
+@each $name, $value in $borders {
+  .#{$name} {
+    #{$value}: 1px #000 solid;
+  }
+}

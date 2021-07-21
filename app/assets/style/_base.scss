@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input[type='button'] {
+  font-size: 1rem;
+}
+
+.main {
+  min-height: calc(100vh - 333px);
+}

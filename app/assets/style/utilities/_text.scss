@@ -1,0 +1,23 @@
+@each $name, $value in $text-align {
+  .text-#{$name} {
+    text-align: $value;
+  }
+}
+
+@each $name, $value in $font-weights {
+  .fw-#{$name} {
+    font-weight: $value;
+  }
+}
+
+.fst-italic {
+  font-style: italic;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.input {
+  &__group {
+    label, input:not([type='checkbox']), textarea, select {
+      display: block;
+      font-size: map-get($text-font-sizes, '7');
+      @include media-breakpoint-up(md) {
+        font-size: map-get($text-font-sizes, '6');
+      }
+    }
+    input:not([type='checkbox']), textarea, select {
+      width: 100%;
+      padding: .5rem 12px;
+      border: 1px#CED4DA solid;
+      &:focus {
+        outline: 1px #000 solid;
+      }
+    }
+  }
+}

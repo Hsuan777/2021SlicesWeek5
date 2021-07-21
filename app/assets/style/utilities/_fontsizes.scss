@@ -1,0 +1,11 @@
+@each $name, $value in $title-font-sizes {
+  .title-fs-#{$name} {
+    font-size: $value !important;
+  }
+}
+
+@each $name, $value in $text-font-sizes {
+  .text-fs-#{$name} {
+    font-size: $value !important;
+  }
+}

@@ -1,0 +1,24 @@
+@each $name, $value in $position {
+  .position-#{$name} {
+    position: $value;
+  }
+}
+
+@each $name, $value in $position-values {
+  .top-#{$name} {
+    top: $value;
+  }
+  .bottom-#{$name} {
+    bottom: $value;
+  }
+  .end-#{$name} {
+    right: $value;
+  }
+  .start-#{$name} {
+    left: $value;
+  }
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}

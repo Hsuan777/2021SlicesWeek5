@@ -1,0 +1,25 @@
+@each $name, $value in $theme-colors {
+  .btn {
+    &-#{$name} {
+      background-color: $value;
+      &:hover {
+        background-color: darken($value, 10%);
+      }
+    }
+  }
+  .bg {
+    &-#{$name} {
+      background-color: $value;
+    }
+  }
+  .text {
+    &-#{$name} {
+      color: $value;
+    }
+  }
+  .border {
+    &-#{$name} {
+      border-color: $value;
+    }
+  }
+}

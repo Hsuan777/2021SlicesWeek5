@@ -1,0 +1,148 @@
+$primary: #650300;
+$secondary: #aa0601;
+$third: #faf2f2;
+$dark-secondary: #212529;
+$grey: #707070;
+$padding-x: 15px;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "third": $third,
+  "white": white,
+  "dark": black,
+  "dark-secondary": $dark-secondary,
+  "grey": $grey,
+  "transparent": transparent,
+);
+
+$space: (
+  "0": 0,
+  "1": 0.5rem,
+  "2": 1rem,
+  "3": 1.5rem,
+  "4": 2rem,
+  "5": 2.5rem,
+  "6": 3rem,
+  "7": 4rem
+);
+
+$grid-breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px
+);
+
+$title-font-sizes: (
+  "1": 4rem,
+  "2": 3rem,
+  "3": 2.625rem,
+  "4": 2rem,
+  "5": 1.75rem,
+  "6": 1.5rem
+);
+
+$text-font-sizes: (
+  "1": 2.25rem,
+  "2": 2rem,
+  "3": 1.75rem,
+  "4": 1.5rem,
+  "5": 1.25rem,
+  "6": 1rem,
+  "7": 0.875rem
+);
+
+
+$font-weights: (
+  // 預設 400
+  "medium": 500,
+  "bold": 700,
+  "bolder": 900,
+);
+
+$icon-sizes: (
+  "small": 1rem,
+  "normal": 1.5rem,
+  "lg": 2.25rem,
+  "xl": 3rem,
+  "xxl": 6.25rem,
+);
+
+$d: (
+  "none": none,
+  "block": block,
+  "flex": flex,
+  "inline": inline,
+  "inline-block": inline-block
+);
+
+$justify-content: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly
+);
+
+$align-items: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly
+);
+
+$flex-direction: (
+  "row": row,
+  "row-reverse": row-reverse,
+  "column": column,
+  "column-reverse": column-reverse
+);
+
+$flex-wrap: (
+  "wrap": wrap,
+  "nowrap": nowrap,
+);
+
+$position: (
+  "relative": relative,
+  "absolute": absolute
+);
+
+$position-values: (
+  "0": 0,
+  "50": 50%,
+  "100": 100%
+);
+
+
+$text-align: (
+  'start': start,
+  'center': center,
+  'end': end
+);
+
+$cols: (
+  "1": 8.33%,
+  "2": 16.66%,
+  "3": 25%,
+  "4": 33.33%,
+  "5": 41%,
+  "6": 50%,
+  "7": 58%,
+  "8": 66%,
+  "9": 75%,
+  "10": 83%,
+  "12": 100%
+);
+
+$borders: (
+  "border": border,
+  "border-start": border-left,
+  "border-end": border-right,
+  "border-top": border-top,
+  "border-bottom": border-bottom
+);

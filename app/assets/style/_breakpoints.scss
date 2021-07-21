@@ -1,0 +1,143 @@
+@each $breakpoint, $width in $grid-breakpoints {
+  @each $name, $number in $space {
+    .ms-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-left: $number;
+      }
+    }
+    .me-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-right: $number;
+      }
+    }
+    .mt-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-top: $number;
+      }
+    }
+    .mb-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-bottom: $number;
+      }
+    }
+    .mx-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-left: $number;
+        margin-right: $number;
+      }
+    }
+    .my-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin-top: $number;
+        margin-bottom: $number;
+      }
+    }
+    .ps-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-left: $number;
+      }
+    }
+    .pe-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-right: $number;
+      }
+    }
+    .pt-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-top: $number;
+      }
+    }
+    .pb-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-bottom: $number;
+      }
+    }
+    .px-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-left: $number;
+        padding-right: $number;
+      }
+    }
+    .py-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding-top: $number;
+        padding-bottom: $number;
+      }
+    }
+  }
+  @each $name, $value in $d {
+    .d-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        display: $value;
+      }
+    }
+  }
+  @each $name, $value in $justify-content {
+    .justify-content-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        justify-content: $value;
+      }
+    }
+  }
+  @each $name, $value in $align-items {
+    .align-items-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        align-items: $value;
+      }
+    }
+  }
+  @each $name, $value in $flex-wrap {
+    .flex-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        flex-wrap: $value;
+      }
+    }
+  }
+  @each $name, $value in $flex-direction {
+    .flex-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        flex-direction: $value;
+      }
+    }
+  }
+  @each $name, $value in $title-font-sizes {
+    .title-fs-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        font-size: $value !important;
+      }
+    }
+  }
+  @each $name, $value in $text-font-sizes {
+    .text-fs-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        font-size: $value !important
+      }
+    }
+  }
+  @each $name, $value in $icon-sizes {
+    .icon-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        width: $value;
+        height: $value;
+      }
+    }
+  }
+  @each $name, $value in $text-align {
+    .text-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        text-align: $value;
+      }
+    }
+  }
+  @each $name, $value in $cols {
+    .col-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        width: $value;
+        flex: 0 0 auto;
+        padding-left: $padding-x;
+        padding-right: $padding-x;
+        position: relative;
+      }
+    }
+  }
+}
