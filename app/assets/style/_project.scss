@@ -175,6 +175,7 @@
       z-index: 1;
     }
     h3 {
+      font-size: map-get($title-font-sizes, '4');
       @include media-breakpoint-up(md) {
         font-size: 4.5rem;
       }
