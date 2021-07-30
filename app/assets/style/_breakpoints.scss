@@ -140,4 +140,11 @@
       }
     }
   }
+  @each $name, $value in $position-values {
+    .w-#{$breakpoint}-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        width: $value;
+      }
+    }
+  }
 }

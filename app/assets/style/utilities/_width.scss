@@ -1,0 +1,5 @@
+@each $name, $value in $position-values {
+  .w-#{$name} {
+    width: $value;
+  }
+}
