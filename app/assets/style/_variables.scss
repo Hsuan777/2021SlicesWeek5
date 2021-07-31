@@ -1,25 +1,30 @@
+/* 常變動變數 */
 $primary: #198754;
-$danger: #aa0601;
-$grey: #707070;
-$padding-x: 15px;
+$danger:  #aa0601;
+$dark:    #212529;
+$grey-100:#F8F9FA;
+$grey-400:#CED4DA;
+$grey-600:#6C757D;
+
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
   "white": white,
-  "dark": black,
-  "grey": $grey,
+  "dark": $dark,
+  "grey-100": $grey-100,
+  "grey-400": $grey-400,
+  "grey-600": $grey-600,
   "transparent": transparent,
 );
 
+$padding-x: 15px;
+
 $space: (
   "0": 0,
-  "1": 0.5rem,
-  "2": 1rem,
-  "3": 1.5rem,
-  "4": 2rem,
-  "5": 2.5rem,
-  "6": 3rem,
-  "7": 4rem
+  "1": 0.5rem, // 8
+  "2": 1rem,   // 16
+  "3": 1.5rem, // 24
+  "4": 2rem,   // 32
 );
 
 $grid-breakpoints: (
@@ -30,25 +35,12 @@ $grid-breakpoints: (
   "xxl": 1400px
 );
 
-$title-font-sizes: (
-  "1": 4rem,
-  "2": 3rem,
-  "3": 2.625rem,
-  "4": 2rem,
-  "5": 1.75rem,
-  "6": 1.5rem
-);
-
 $text-font-sizes: (
-  "1": 2.25rem,
-  "2": 2rem,
-  "3": 1.75rem,
-  "4": 1.5rem,
-  "5": 1.25rem,
-  "6": 1rem,
-  "7": 0.875rem
+  "smaller": 12px,
+  "small": 14px,
+  "large": 20px,
+  "xl": 24px,
 );
-
 
 $font-weights: (
   // 預設 400
@@ -58,13 +50,13 @@ $font-weights: (
 );
 
 $icon-sizes: (
-  "small": 1rem,
-  "normal": 1.5rem,
-  "lg": 2.25rem,
-  "xl": 3rem,
-  "xxl": 6.25rem,
+  "small": 20px,
+  "large": 36px,
+  "xl": 40px,
 );
+/* 常變動變數 End */
 
+/* Flexbox */
 $d: (
   "none": none,
   "block": block,
@@ -102,7 +94,9 @@ $flex-wrap: (
   "wrap": wrap,
   "nowrap": nowrap,
 );
+/* Flexbox End */
 
+/* 定位 */
 $position: (
   "relative": relative,
   "absolute": absolute
@@ -114,14 +108,17 @@ $position-values: (
   "100": 100%,
   "auto": auto
 );
+/* 定位 End */
 
-
+/* 文字位置 */
 $text-align: (
   'start': start,
   'center': center,
   'end': end
 );
+/* 文字位置 End */
 
+/* grid */
 $cols: (
   "1": 8.33%,
   "2": 16.66%,
@@ -135,7 +132,9 @@ $cols: (
   "10": 83%,
   "12": 100%
 );
+/* grid End */
 
+/* border */
 $borders: (
   "border": border,
   "border-start": border-left,
@@ -143,3 +142,4 @@ $borders: (
   "border-top": border-top,
   "border-bottom": border-bottom
 );
+/* border End */
