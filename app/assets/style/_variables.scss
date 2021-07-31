@@ -1,16 +1,12 @@
-$primary: #650300;
-$secondary: #aa0601;
-$third: #faf2f2;
-$dark-secondary: #212529;
+$primary: #198754;
+$danger: #aa0601;
 $grey: #707070;
 $padding-x: 15px;
 $theme-colors: (
   "primary": $primary,
-  "secondary": $secondary,
-  "third": $third,
+  "danger": $danger,
   "white": white,
   "dark": black,
-  "dark-secondary": $dark-secondary,
   "grey": $grey,
   "transparent": transparent,
 );
