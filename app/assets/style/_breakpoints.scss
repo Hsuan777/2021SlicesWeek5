@@ -1,5 +1,10 @@
 @each $breakpoint, $width in $grid-breakpoints {
   @each $name, $number in $space {
+    .m-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        margin: $number;
+      }
+    }
     .ms-#{$breakpoint}-#{$name} {
       @include media-breakpoint-up($breakpoint) {
         margin-left: $number;
@@ -30,6 +35,11 @@
       @include media-breakpoint-up($breakpoint) {
         margin-top: $number;
         margin-bottom: $number;
+      }
+    }
+    .p-#{$name} {
+      @include media-breakpoint-up($breakpoint) {
+        padding: $number;
       }
     }
     .ps-#{$breakpoint}-#{$name} {

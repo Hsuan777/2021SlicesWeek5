@@ -10,6 +10,14 @@
     padding-left: $padding-x*2;
     padding-right: $padding-x*2;
   }
+  &-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    .row {
+      margin-left: 0;
+      margin-right: 0; 
+    }
+  }
 }
 
 .row {
@@ -38,3 +46,15 @@
     position: relative;
   }
 }
+
+.g-0 {
+  @each $name, $value in $cols {
+    .col-#{$name} {
+      width: $value;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+    }
+  }
+}
+

@@ -11,6 +11,9 @@
 }
 
 @each $name, $number in $space {
+  .m-#{$name} {
+    margin: $number;
+  }
   .ms-#{$name} {
     margin-left: $number;
   }
@@ -30,6 +33,9 @@
   .my-#{$name} {
     margin-top: $number;
     margin-bottom: $number;
+  }
+  .p-#{$name} {
+    padding: $number;
   }
   .ps-#{$name} {
     padding-left: $number;

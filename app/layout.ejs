@@ -5,19 +5,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-
-  <main class="main">
-    <%- contents %>
-  </main>
+  <div class="container-fluid">
+    <div class="row g-0 h-100vh">
+      <div class="col-3">
+        <div class="d-flex flex-column justify-content-between py-5 h-100 bg-grey-100">
+          <div>
+            <!-- logo -->
+            <div class="px-5 mb-5">
+              <h1 class="logo">
+                ANSWER
+              </h1>
+            </div>
+            <!-- menu -->
+            <ul class="menu fw-bold">
+              <li class="menu__item">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">insert_chart</span>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">question_answer</span>
+                  <p>Question</p>
+                </a>
+              </li>
+              <li class="menu__item active">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">assignment</span>
+                  <p>Assignment</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">video_library</span>
+                  <p>Course</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">people</span>
+                  <p>Admin</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="d-flex align-items-center py-2 px-5">
+                  <span class="material-icons me-3">settings</span>
+                  <p>Settings</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Admin Login -->
+          <div class="d-flex align-items-center px-5">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="andychen" class="icon-xl rounded-circle me-3">
+            <p>
+              <span class="fw-bold">Andy Chen</span><br>
+              <span class="text-small text-grey-600">andy0401@mail.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <main class="p-4">
+          <%- contents %>
+        </main>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
