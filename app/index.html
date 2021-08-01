@@ -5,7 +5,7 @@ engine: ejs
 current: index
 ---
 
-<ul class="d-flex align-items-center border pb-5 mb-2">
+<ul class="d-flex align-items-center pb-5 mb-1">
   <li class="me-6">
     <h2 class="text-xl fw-bold">Assignment</h2>
   </li>
@@ -22,9 +22,97 @@ current: index
   </li>
   <li>
     <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
-      <span class="material-icons-outlined">notifications_active</span>
+      <span class="material-icons">notifications_active</span>
     </button>
   </li>
 </ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 ps-0">
+      <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none border-0">
+        <span class="text-dark">All(4)</span>
+        <span class="material-icons-outlined">expand_more</span>
+      </button>
+      <ul class="listGroup">
+        <li class="listGroup__item active">
+          <a href="" class="d-block p-2">
+            <p class="d-flex text-smaller">Chapter Assignment 2
+              <span class="ms-auto">4 hrs ago</span>
+            </p>
+            <p class="d-flex">
+              <span class="fw-bold">Please check this file…</span>
+              <span class="ms-auto text-smaller text-grey-600">Emily Wang</span>
+            </p>
+          </a>
+        </li>
+        <li class="listGroup__item">
+          <a href="" class="d-block p-2">
+            <p class="d-flex text-smaller">Chapter Assignment 2
+              <span class="ms-auto">12 hrs ago</span>
+            </p>
+            <p class="d-flex">
+              <span class="fw-bold">My Homework…</span>
+              <span class="ms-auto text-smaller text-grey-600">David Xu</span>
+            </p>
+          </a>
+        </li>
+        <li class="listGroup__item">
+          <a href="" class="d-block p-2">
+            <p class="d-flex text-smaller">Final Assignment
+              <span class="ms-auto">18 hrs ago</span>
+            </p>
+            <p class="d-flex">
+              <span class="fw-bold">Have a problem with this…</span>
+              <span class="ms-auto text-smaller text-grey-600">Emily Wang</span>
+            </p>
+          </a>
+        </li>
+        <li class="listGroup__item">
+          <a href="" class="d-block p-2">
+            <p class="d-flex text-smaller">Final Assignment
+              <span class="ms-auto">19 hrs ago</span>
+            </p>
+            <p class="d-flex">
+              <span class="fw-bold">Did I do it right?</span>
+              <span class="ms-auto text-smaller text-grey-600">Christina Lin</span>
+            </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="col-8 pe-0">
+      <p class="text-smaller text-grey-600 text-end lh-lg">2 comments</p>
+      <div class="card">
+        <div class="card__header d-flex align-items-center">
+          <p>
+            <span class="text-smaller">Chapter Assignment 2 / HTML&CSS</span><br>
+            <span class="fw-bold">Please check this file for me, thanks!</span>
+          </p>
+          <span class="ms-auto material-icons">more_vert</span>
+        </div>
+        <div class="card__body">
+          <div class="d-flex">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="emilywang" class="icon-xl rounded-circle object-fit-cover me-1">
+            <!-- <div class="icon-xl">1qwewq23</div> -->
+            <div>
+              <p class="d-flex flex-column mb-3">
+                12
+                <span class="text-smaller text-grey-600">10:38 AM (4 hours ago)</span>
+              </p>
+              <p class="text-small mb-3">
+                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="bg-grey-100 text-primary">img</span>? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?
+              </p>
+              <button type="button" class="btn btn-grey-100 d-flex align-items-center">
+                <span class="material-icons me-1">attach_file</span>
+                <span class="text-bold">HW-2-David.zip</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
