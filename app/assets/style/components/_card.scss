@@ -7,10 +7,7 @@
     background-color: map-get($theme-colors, "grey-100");
     border-bottom: 1px map-get($theme-colors, "grey-400") solid;
   }
-  &__body {
-    padding-top: map-get($space, "3");
-    padding-left: map-get($space, "3");
-    padding-right: map-get($space, "5");
-    padding-bottom: map-get($space, "5");
-  }
+  // &__body {
+    
+  // }
 }
