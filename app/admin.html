@@ -10,10 +10,10 @@ current: assignment
     <h2 class="text-xl fw-bold">Admin</h2>
   </li>
   <li class="d-flex align-items-center">
-    <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none">
+    <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#adminInfoModal">
+      <span class="text-dark">Add New Admin</span>
       <span class="material-icons-outlined">add</span>
     </button>
-    <p>Add New Admin</p>
   </li>
   <li class="ms-auto me-4">
     <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
@@ -27,4 +27,89 @@ current: assignment
   </li>
 </ul>
 
-
+<!-- Modal -->
+<div class="modal fade" id="adminInfoModal" tabindex="-1" aria-labelledby="adminInfoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fw-bold text-xl" id="exampleModalLabel">New Admin</h2>
+        <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none text-dark" data-bs-dismiss="modal" aria-label="Close">
+          <span class="material-icons-outlined">close</span>        
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <ul>
+            <!-- Account -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Account</h3>
+              <div class="mb-3">
+                <label for="userName" class="form-label text-small d-block">Name</label>
+                <input type="email" class="form-control border-dark" name="userName" id="userName" placeholder="yourname">
+              </div>
+              <div>
+                <label for="userEmail" class="form-label text-small d-block">Email</label>
+                <input type="email" class="form-control border-dark" name="userEmail" id="userEmail" placeholder="yourname@example.com">
+              </div>
+            </li>
+            <!-- Verification -->
+            <li class="pb-4 mb-4  border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Verification</h3>
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-icons text-danger me-1">warning</span>                 
+                <label class="form-label fw-bold mb-0">Unverified</label>
+              </div>
+              <input type="button" value="Send Verification Mail" class="btn btn-outline-primary py-3 w-100 border-grey-400 fw-bold">
+            </li>
+            <!-- Access Level -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Access Level</h3>
+              <select name="userSelect" id="" class="form-select">
+                <option selected>-Choose access level-</option>
+                <option value="1">Student</option>
+                <option value="2">Admin</option>
+              </select>
+            </li>
+            <!-- Custom Access -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Custom Access</h3>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Lecture">
+                <label class="checkbox__label form-check-label" for="Lecture">Lecture</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Coupon">
+                <label class="checkbox__label form-check-label" for="Coupon">Coupon</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Message">
+                <label class="checkbox__label form-check-label" for="Message">Message</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Setting">
+                <label class="checkbox__label form-check-label" for="Setting">Setting</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Task Menu">
+                <label class="checkbox__label form-check-label" for="Task Menu">Task Menu</label>           
+              </div>
+            </li>
+            <!-- Deactivate Account -->
+            <li class="pb-4 mb-4">
+              <h3 class="text-large fw-bold mb-3">Deactivate Account</h3>
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-icons text-danger me-1">warning</span>                 
+                <label class="form-label fw-bold mb-0">This cannot be undone!</label>
+              </div>
+              <input type="button" value="Deactivate This Account" class="btn btn-outline-danger py-3 w-100 fw-bold border-danger">
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
