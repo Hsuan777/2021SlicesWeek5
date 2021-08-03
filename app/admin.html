@@ -10,7 +10,7 @@ current: assignment
     <h2 class="text-xl fw-bold">Admin</h2>
   </li>
   <li class="d-flex align-items-center">
-    <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#adminInfoModal">
+    <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#newAdminModal">
       <span class="text-dark">Add New Admin</span>
       <span class="material-icons-outlined">add</span>
     </button>
@@ -27,11 +27,46 @@ current: assignment
   </li>
 </ul>
 
-<!-- Modal -->
-<div class="modal fade" id="adminInfoModal" tabindex="-1" aria-labelledby="adminInfoModal" aria-hidden="true">
-  <div class="modal-dialog">
+<table class="table">
+  <thead class="border-bottom">
+    <tr>
+      <th scope="col" class="fw-bold d-flex align-items-center">
+        ID
+        <button type="button" class="btn btn-link p-0 d-flex text-decoration-none me-4 ms-1">
+          <span class="material-icons">arrow_downward</span>
+        </button>
+      </th>
+      <th scope="col" class="text-start fw-bold">Name</th>
+      <th scope="col" class="text-start fw-bold">Email</th>
+      <th scope="col" class="text-start fw-bold">Verified</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-bottom border-grey-400">
+      <th scope="row" class="text-start">#1</td>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark me-4" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
+            <span class="material-icons">visibility</span>
+          </button>
+          <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+            <span class="material-icons">edit</span>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- newAdminModal -->
+<div class="modal fade" id="newAdminModal" tabindex="-1" aria-labelledby="newAdminModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header border-0">
+      <div class="modal-header">
         <h2 class="modal-title fw-bold text-xl" id="exampleModalLabel">New Admin</h2>
         <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none text-dark" data-bs-dismiss="modal" aria-label="Close">
           <span class="material-icons-outlined">close</span>        
@@ -106,9 +141,130 @@ current: assignment
           </ul>
         </form>
       </div>
-      <div class="modal-footer border-0">
+      <div class="modal-footer">
         <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- editAdminModal -->
+<div class="modal fade" id="editAdminModal" tabindex="-1" aria-labelledby="editAdminModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fw-bold text-xl" id="exampleModalLabel">Edit Admin</h2>
+        <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none text-dark" data-bs-dismiss="modal" aria-label="Close">
+          <span class="material-icons-outlined">close</span>        
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <ul>
+            <!-- Account -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Account</h3>
+              <div class="mb-3">
+                <label for="userName" class="form-label text-small d-block">Name</label>
+                <input type="email" class="form-control" name="userName" id="userName" value="Emir Wicks" readonly>
+              </div>
+              <div>
+                <label for="userEmail" class="form-label text-small d-block">Email</label>
+                <input type="email" class="form-control" name="userEmail" id="userEmail" value="emir.wicks@mail.com" readonly>
+              </div>
+            </li>
+            <!-- Verification -->
+            <li class="pb-4 mb-4  border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Verification</h3>
+              <div class="d-flex align-items-center mb-3">
+                <span class="material-icons text-primary me-1">check_circle</span>                 
+                <label class="form-label fw-bold mb-0">Unverified</label>
+                <p class="text-small ms-auto">2020/4/12</p>
+              </div>
+              <input type="button" value="Send Verification Mail" class="btn btn-outline-grey-400 py-3 w-100 border-grey-400 fw-bold" disabled>
+            </li>
+            <!-- Access Level -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Access Level</h3>
+              <select name="userSelect" id="" class="form-select">
+                <option >-Choose access level-</option>
+                <option value="1">Student</option>
+                <option value="2" selected>Admin</option>
+              </select>
+            </li>
+            <!-- Custom Access -->
+            <li class="pb-4 mb-4 border-bottom border-grey-400">
+              <h3 class="text-large fw-bold mb-3">Custom Access</h3>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Lecture">
+                <label class="checkbox__label form-check-label" for="Lecture">Lecture</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Coupon">
+                <label class="checkbox__label form-check-label" for="Coupon">Coupon</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Message">
+                <label class="checkbox__label form-check-label" for="Message">Message</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Setting">
+                <label class="checkbox__label form-check-label" for="Setting">Setting</label>           
+              </div>
+              <div class="form-check">
+                <input class="checkbox form-check-input" type="checkbox" value="" id="Task Menu">
+                <label class="checkbox__label form-check-label" for="Task Menu">Task Menu</label>           
+              </div>
+            </li>
+            <!-- Deactivate Account -->
+            <li class="pb-4 mb-4">
+              <h3 class="text-large fw-bold mb-3">Deactivate Account</h3>
+              <div class="d-flex align-items-center mb-3 text-danger">
+                <span class="material-icons me-1">warning</span>                 
+                <label class="form-label fw-bold mb-0">This cannot be undone!</label>
+              </div>
+              <input type="button" value="Deactivate This Account" class="btn btn-outline-danger py-3 w-100 fw-bold border-danger">
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="viewInfoModal" tabindex="-1" aria-labelledby="adminInfoModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-5">
+        <div class="d-flex w-100">
+          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true" alt="emir" class="viewInfo__img object-fit-cover me-4">
+          <div class="w-100">
+            <div class="d-flex">
+              <p class="me-auto">#1</p>
+              <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none text-dark" data-bs-dismiss="modal" aria-label="Close">
+                <span class="material-icons-outlined">close</span>        
+              </button>
+            </div>
+            <h3><span>Admin</span><br><span class="text-xl fw-bold">Emir Wicks</span></h3>
+            <p class="text-small mb-2 text-grey-600">emir.wicks@mail.com</p>
+            <div class="d-flex align-items-center">
+              <p class="text-small me-auto bg-grey-100 px-1">Verified</p>
+              <button type="button" class="btn btn-link p-0 d-flex align-items-center text-decoration-none">
+                <span class="js-viewInfo__more material-icons-outlined">expand_more</span>        
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="viewInfo__btns d-flex w-100">
+          <input type="button" value="Deactivate" class="btn btn-outline-danger px-5 ms-auto me-3">
+          <input type="button" value="Edit" class="btn btn-primary px-5">
+        </div>
       </div>
     </div>
   </div>
