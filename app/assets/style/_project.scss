@@ -7,21 +7,7 @@
     position: relative;
   }
   &__item {
-    &.active {
-      a {
-        color: map-get($theme-colors, "primary");
-        &::before {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 4px;
-          height: 100%;
-          background-color: map-get($theme-colors, "primary");
-        }
-      } 
-    }
-    a:hover {
+    a.active, a:hover {
       color: map-get($theme-colors, "primary");
       &::before {
         position: absolute;

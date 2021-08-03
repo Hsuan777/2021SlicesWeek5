@@ -15,8 +15,17 @@ $(document).ready(() => {
     } else {
       $(".js-viewInfo__more").text('expand_more');
     }
-    console.log($(".js-viewInfo__more").text())
     $(".viewInfo").toggleClass("d-none");
     $(".viewInfo__btns").toggleClass("active");
   });
+
+  let htmlTitle = $('title');
+  switch(htmlTitle.text()){
+    case "Assignment":
+      $('a[href="index.html"]').addClass('active');
+      break;
+    case "Admin": 
+      $('a[href="admin.html"]').addClass('active');
+      break;
+  }
 });
