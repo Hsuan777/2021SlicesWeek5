@@ -31,37 +31,37 @@
               <li class="menu__item">
                 <a href="" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">insert_chart</span>
-                  <p>Dashboard</p>
+                  Dashboard
                 </a>
               </li>
               <li class="menu__item">
                 <a href="" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">question_answer</span>
-                  <p>Question</p>
+                  Question
                 </a>
               </li>
-              <li class="menu__item active">
+              <li class="menu__item">
                 <a href="index.html" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">assignment</span>
-                  <p>Assignment</p>
+                  Assignment
                 </a>
               </li>
               <li class="menu__item">
                 <a href="" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">video_library</span>
-                  <p>Course</p>
+                  Course
                 </a>
               </li>
               <li class="menu__item">
                 <a href="admin.html" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">people</span>
-                  <p>Admin</p>
+                  Admin
                 </a>
               </li>
               <li class="menu__item">
                 <a href="" class="d-flex align-items-center py-2 px-5">
                   <span class="material-icons me-3">settings</span>
-                  <p>Settings</p>
+                  Settings
                 </a>
               </li>
             </ul>
@@ -152,26 +152,27 @@
             </p>
           </a>
         </li>
-
       </ul>
     </div>
     <div class="col-8 pe-0">
       <p class="text-smaller text-grey-600 text-end lh-lg">2 comments</p>
-      <div class="card">
+      <div class="card mb-3">
         <div class="card__header d-flex align-items-center">
           <p>
             <span class="text-smaller">Chapter Assignment 2 / HTML&CSS</span><br>
             <span class="fw-bold">Please check this file for me, thanks!</span>
           </p>
-          <span class="ms-auto material-icons">more_vert</span>
+          <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark ms-auto">
+            <span class="material-icons">more_vert</span>
+          </button>
         </div>
         <div class="card__body">
-          <div class="d-flex">
-            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="emilywang" class="icon-xl rounded-circle object-fit-cover me-1">
-            <!-- <div class="icon-xl">1qwewq23</div> -->
-            <div>
+          <!-- 發問者 -->
+          <div class="d-flex pt-3 ps-3 pe-5">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="emilywang" class="icon-xl rounded-circle object-fit-cover flex-shrink-0 me-1">
+            <div class="border-bottom border-grey-400 pb-3 mb-3">
               <p class="d-flex flex-column mb-3">
-                12
+                <span class="fw-bold">Emily Wang</span>
                 <span class="text-smaller text-grey-600">10:38 AM (4 hours ago)</span>
               </p>
               <p class="text-small mb-3">
@@ -183,7 +184,106 @@
               </button>
             </div>
           </div>
+          <!-- 回覆者 -->
+          <div class="reply d-flex pt-3 pb-5 ps-3 pe-5">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="andychen" class="icon-xl rounded-circle object-fit-cover flex-shrink-0 me-1">
+            <div>
+              <div class="d-flex align-items-start">
+                <p class="d-flex flex-column mb-3">
+                  <span class="fw-bold"> Andy Chen (You)</span>
+                  <span class="text-smaller text-grey-600">13:24 AM (1 hours ago)</span>
+                </p>
+                <button type="button" class="btn btn-link p-1 d-flex text-decoration-none text-dark ms-auto">
+                  <span class="material-icons-outlined">grade</span>
+                </button>
+                <button type="button" class="btn btn-link p-1 d-flex text-decoration-none text-dark">
+                  <span class="material-icons">edit</span>
+                </button>
+              </div>
+              <p class="text-small">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                <br><br>
+                You can:
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;• adjust the <span class="bg-grey-100 text-primary">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;• change the <span class="bg-grey-100 text-primary">display</span> so it isn’t inline.
+              </p>
+            </div>
+            <!-- 回覆內容 -->
+            <div class="reply__content">
+              <ul class="d-flex border border-grey-400 bg-grey-100 px-4 py-3">
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="fw-bold me-1">Body Text</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">format_bold</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">format_italic</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">format_list_bulleted</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">format_list_numbered</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">image</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">attachment</span>
+                  </button>
+                </li>
+                <li class="me-4">
+                  <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+                    <span class="material-icons">code</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="position-relative h-100">
+                <textarea name="" id="" ></textarea>
+                <div class="d-flex position-absolute bottom-30 end-5">
+                  <input type="button" value="Cancel" class="js-cancel btn btn-outline-primary px-5 me-1">
+                  <input type="button" value="Reply" class="btn btn-primary px-5">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="js-replyGroup">
+        <ul class="d-flex align-items-center">
+          <li class="me-4">
+            <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+              <span class="material-icons">chevron_left</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-link p-0 d-flex text-decoration-none text-dark">
+              <span class="material-icons">chevron_right</span>
+            </button>
+          </li>
+          <li class="ms-auto me-3">
+            <input type="button" value="Mark as read" class="btn btn-outline-primary px-5">
+          </li>
+          <li>
+            <input type="button" value="Reply" class="js-reply btn btn-primary px-5">
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -195,7 +295,7 @@
       </div>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
